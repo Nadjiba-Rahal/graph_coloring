@@ -205,7 +205,7 @@ def render():
         tab_names.append("Furini (2017)")
         renderers.append(("f", "#38c172", "furini"))
     if rs and rf:
-        tab_names.append("⚡  Comparison")
+        tab_names.append("Comparison")
 
     tabs = st.tabs(tab_names)
 
