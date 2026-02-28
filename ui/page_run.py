@@ -144,7 +144,7 @@ def render():
             ph_f.markdown(race_panel_idle("FURINI (2017)"), unsafe_allow_html=True)
 
         if rs or rf:
-            if st.button("▶  View Results →", use_container_width=True):
+            if st.button("View Results →", use_container_width=True):
                 st.session_state.page = "results"
                 st.rerun()
 
