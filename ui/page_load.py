@@ -21,25 +21,7 @@ def render():
             type="col", label_visibility="collapsed",
         )
 
-    with right:
-        st.markdown("""
-<div style="background:#0d1117;border:1px solid #1c2333;border-radius:10px;
-            padding:1.2rem;font-family:'IBM Plex Mono',monospace;
-            font-size:.78rem;color:#4a5568;line-height:1.9;">
-<div style="color:#e2e8f0;font-size:.85rem;margin-bottom:.6rem;font-weight:600;">
-  DIMACS Format
-</div>
-c  comment line<br>
-p edge &lt;n&gt; &lt;m&gt;<br>
-e &lt;u&gt; &lt;v&gt;<br>
-…<br>
-<br>
-<div style="color:#4a5568;font-size:.7rem;">
-  Tested: DSJC125.1 · DSJC125.5<br>
-  queen5_5 · myciel6 · …
-</div>
-</div>
-""", unsafe_allow_html=True)
+
 
     if uploaded is None:
         st.info("Upload a DIMACS .col file to begin.")
