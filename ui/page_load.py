@@ -58,6 +58,6 @@ def render():
     st.session_state.res_sewell     = None
     st.session_state.res_furini     = None
 
-    if st.button("▶  Run Algorithms →", use_container_width=True):
+    if st.button("Run Algorithms →", use_container_width=True):
         st.session_state.page = "run"
         st.rerun()
